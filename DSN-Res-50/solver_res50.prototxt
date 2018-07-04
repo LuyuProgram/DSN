@@ -1,0 +1,19 @@
+net: "train_res50.prototxt"
+test_iter: 300
+test_interval: 500
+# lr for fine-tuning should be lower than when starting from scratch
+base_lr: 0.01 
+lr_policy: "multistep"
+gamma: 0.5
+# stepsize should also be lower, as we're closer to being done
+stepvalue: 20000
+stepvalue: 30000
+display: 100
+max_iter: 30000
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 5000
+snapshot_prefix: "/data0/res50/dsn-res50"
+solver_mode: GPU
+
+
