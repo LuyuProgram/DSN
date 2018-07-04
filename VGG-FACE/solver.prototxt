@@ -1,0 +1,15 @@
+net: "vggface_train_test.prototxt"
+test_iter: 500
+test_interval: 500
+base_lr: 0.0005 #0.0001
+lr_policy: "multistep"
+gamma: 0.5
+stepvalue:30000
+stepvalue:50000
+momentum: 0.9
+weight_decay: 0.0001
+display: 100
+max_iter: 20000
+snapshot: 500
+snapshot_prefix: "/data0/vggface/snapshots/vggface"
+solver_mode: GPU
