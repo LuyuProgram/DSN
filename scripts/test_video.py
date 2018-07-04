@@ -18,7 +18,7 @@ caffe.set_mode_gpu()
 caffe.set_device(6)
 
 MODEL_DEF = 'deploy.prototxt'
-MODEL_PATH = 'dsn_vgg_iter_300000.caffemodel'
+MODEL_PATH = 'dsn_vgg_iter_30000.caffemodel'
 
 SIZE = 256 #256
 CROP_SIZE = 224 #224
