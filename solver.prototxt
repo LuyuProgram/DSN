@@ -9,7 +9,7 @@ stepvalue:30000
 momentum: 0.9
 average_loss: 20
 display: 20
-max_iter: 8000
+max_iter: 30000
 weight_decay: 0.0005
 snapshot: 500
 snapshot_prefix: "/data0/snapshots/dsn_vgg"

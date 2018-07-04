@@ -43,4 +43,4 @@ interp_surgery(solver.net, interp_layers)
 #solver.restore('./snapshot/iter_4000.solverstate')
 solver.net.copy_from(base_weights)
 
-solver.step(20000)
+solver.step(30000)
