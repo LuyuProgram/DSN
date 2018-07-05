@@ -28,10 +28,16 @@ cuda 8.0
     cd ./scripts 
     python extract_frames.py  
     ```
-    (2) We employe MTCNN implemented in [facenet](https://github.com/davidsandberg/facenet) to detect faces in the frames, resulting in  400 × 400 pixels cropped images  face detection and alignment:
+    (2) We employe MTCNN implemented in [facenet](https://github.com/davidsandberg/facenet) to detect faces in the frames (image size=400，margin=100). Put the 400*400 cropped images in ./CropData/
+    (3) Compile Dlib's Python interface and download shape_predictor_68_face_landmarks.dat. Get 68 landmarks of 400*400 images cropped by MTCNN. 
     ```
     cd ./scripts 
-
+    wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+    python getLandmarks.py
+    ```
+    (4) Face alignments from the cropped images. landmark_list.txt is a list of 68 landmarks detected by Dlib; /CropData/ is the directory of 400*400 cropped images; /AlignData/ is the target directory of aligned faces.
+    ```
+    ./face_align  landmark_list.txt  ./CropData/  ./AlignData/
     ```
 
 3. Models:
@@ -52,6 +58,13 @@ cuda 8.0
     python test_video.py  
     ```
 
+4. Model fusion:  
+
+    ```
+    cd ./scripts 
+    python merge_score.py
+    ```
+    
 
 ## Citing
 If you find the code useful, please cite:
