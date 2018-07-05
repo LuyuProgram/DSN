@@ -28,7 +28,8 @@ cuda 8.0
     cd ./scripts 
     python extract_frames.py  
     ```
-    (2) We employe MTCNN implemented in [facenet](https://github.com/davidsandberg/facenet) to detect faces in the frames (image size=400，margin=100). Put the 400*400 cropped images in ./CropData/
+    (2) We employe MTCNN implemented in [facenet](https://github.com/davidsandberg/facenet) to detect faces in the frames (image size=400，margin=100).
+    
     (3) Compile Dlib's Python interface and download shape_predictor_68_face_landmarks.dat. Get 68 landmarks of 400*400 images cropped by MTCNN. 
     ```
     cd ./scripts 
