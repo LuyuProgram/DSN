@@ -23,14 +23,13 @@ Two datasets we used can be downloaded from the EmotiW 2018 website: <https://si
 
 To train DSN-VGG-FACE , DSN-Res-50 or DenseNet-121,  
 you can finetune using pretrained models from: [VGG-FACE](http://www.robots.ox.ac.uk/~vgg/software/vgg_face/, "vggface"),[ResNet-50](https://github.com/KaimingHe/deep-residual-networks,"res50"),[DenseNet-121](https://github.com/shicai/DenseNet-Caffe,"dense121"). Then
-'
-git clone https://github.com/EvelynFan/DSN.git
-cd ./DSN-VGG-FACE
-python run_dsn.py
-cd ./DSN-Res-50
+```
+git clone https://github.com/EvelynFan/DSN.git  
+cd ./DSN-VGG-FACE  
+python run_dsn.py  
+cd ./DSN-Res-50  
 python run_dsn_res50.py
-'
-
+```
 
 
 
