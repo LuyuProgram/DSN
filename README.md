@@ -17,12 +17,13 @@ cuda 8.0
 
 ## Datasets and models
 1.Datasets:  
-Two datasets we used can be downloaded from the EmotiW 2018 website: <https://sites.google.com/view/emotiw2018> and Real-world Affective Faces (RAF-DB)website: <http://www.whdeng.cn/RAF/model1.html>. You can send an e-mail to the author to access the database. 
+
+Two datasets we used can be downloaded from the [EmotiW 2018](https://sites.google.com/view/emotiw2018,"emoti") and Real-world Affective Faces[RAF-DB](http://www.whdeng.cn/RAF/model1.html,"raf"). You can send an e-mail to the author to access the database. 
 
 2.Models:
 
 To train DSN-VGG-FACE , DSN-Res-50 or DenseNet-121,  
-you can finetune using pretrained models from: [VGG-FACE](http://www.robots.ox.ac.uk/~vgg/software/vgg_face/, "vggface"),[ResNet-50](https://github.com/KaimingHe/deep-residual-networks,"res50"),[DenseNet-121](https://github.com/shicai/DenseNet-Caffe,"dense121"). Then
+you can finetune using pretrained models from: [VGG-FACE](http://www.robots.ox.ac.uk/~vgg/software/vgg_face/, "vggface"),[ResNet-50](https://github.com/KaimingHe/deep-residual-networks,"res50"),[DenseNet-121](https://github.com/shicai/DenseNet-Caffe,"dense121"). 
 ```
 git clone https://github.com/EvelynFan/DSN.git  
 cd ./DSN-VGG-FACE  
